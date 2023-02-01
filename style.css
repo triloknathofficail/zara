@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: transparent; */
+  /* z-index:-99 ; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#slider-nav {
+  position: absolute;
+  top: 78%;
+  /* border: 1px solid red; */
+}
+
+.page1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw22-sale/subhome-xmedia-launch-kids//w/3144/IMAGE-landscape-fill-ec8819cc-0643-40f4-b59d-a1331dc684d1-ca_ES@AD_0.jpg?ts=1672068354681);
+}
+.page1-child{
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
+  background-size: cover;
+  background-position: center;
+  /* border: 1px solid red; */
+  text-align: center;
+  top:40vh;
+  left: 38vw;
+}
+.page1-child>h1{
+  color: yellow;
+  font-size:8vmax;
+  font-weight: 666;
+  letter-spacing: 10px;
+}
+.page1-child>p{
+  color: #eee;
+  font-size: 1.2vmax;
+  font-weight: 500;
+}
+
+.page2 {
+  width: 100%;
+
+}
+
+#vv {
+  width: 100%;
+}
+
+.page3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-coats/subhome-xmedia-52-2//w/3662/IMAGE-landscape-default-fill-9ff05c49-8c3f-4851-91ec-948cac1a4f57-default_0.jpg?ts=1672331993292);
+}
+
+.page4 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-basics/subhome-xmedia-52//w/3662/IMAGE-landscape-fill-4cc4a1d3-5036-4548-913f-d049791a3f88-default_0.jpg?ts=1672333010738);
+}
+
+.page5 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-accesorios/subhome-xmedia-52//w/3662/IMAGE-landscape-default-fill-e5941e69-6704-463e-99c5-e603d9515483-default_0.jpg?ts=1672333933672);
+}
+
+.page6 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-jackets/subhome-xmedia-52//w/3662/IMAGE-landscape-default-fill-5f60c69f-0946-4e09-a480-8f0b9d942910-default_0.jpg?ts=1672331002669);
+}
+
+.page7 {
+  text-align: center;
+}
+
+.page7>h6 {
+  font-size: 1vmax;
+  font-weight: 300;
+  padding: 50px 0;
+
+}
+
+.page7>ul {
+  padding: 20px 0;
+  list-style: none;
+}
+
+.page7>ul>li {
+  float: right;
+  padding: 5px 5px;
+  font-size: 0.7vmax;
+}
+
+#futter {
+  position: absolute;
+  left: 3%;
+  bottom: 7%;
+  text-align: start;
+  font-size: 0.8vmax;
+}
+
+.upper {
+  /* height: 100%; */
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  /* border: 1px solid red; */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.left>img {
+  /* border: 1px solid red; */
+}
+
+#menu {
+  padding: 10px 10px;
+}
+
+.right {
+
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+#shopping-icon {
+  padding: 10px 10px;
+  font-size: 2vmax;
+  font-weight: 100;
+}
+#shopping-icon:hover{
+  cursor: pointer;
+}
+
+.right>h6 {
+  padding: 18px 10px;
+  font-size: 1vmax;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: rgb(37, 36, 36);
+}
+.right>h6:hover{
+  cursor: pointer;
+}
+
+.right>h5 {
+  /* border: 1px solid red; */
+  height: 10px;
+  width: 70px;
+  padding: 18px 0;
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-size: 1vmax;
+  font-weight: 100;
+  border-bottom: 0.5px solid black;
+  text-align: left;
+}
+.right>h5:hover{
+  cursor: pointer;
+}
+
+.silder-sport {
+  z-index: -10;
+  position: absolute;
+  left: 22vw;
+  top: 90vh;
+}
+
+.silder-sport>ul>li {
+  list-style: none;
+  float: left;
+  padding: 0 13px;
+  font-size: 1vmax;
+}
+
+.men-button {
+  /* border: 1px solid red; */
+  float: right;
+  margin-top: 12%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.men-button:hover{
+  cursor: pointer;
+}
+
+.men-button>i {
+  margin-left: 1vh;
+  transition: 0.2s all linear;
+}
+
+.men-button:hover i {
+  transform: translate(30%);
+}
+
+.men-button>h6 {
+  /* border: 1px solid red; */
+
+  font-size: 1vmax;
+  font-weight: 200;
+  float: left;
+  text-align: center;
+}
+
+.men-button>i {
+  /* border: 1px solid red; */
+  font-size: 2vmax;
+  font-weight: 10;
+  transition: 0.2s all linear;
+}
+
+.menu {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(239, 236, 236);
+  /* border: 1px solid red; */
+  z-index:-2;
+  display: none;
+}
+
+.menu>ul {
+  position: relative;
+  display: flex;
+  flex-direction: ROW;
+  top: 25vh;
+  left: 10px;
+
+}
+
+.menu>ul>li {
+  list-style: none;
+  padding: 0 10px;
+
+}
+
+.menu>ul>li>a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #111;
+
+}
+
+.menu>ul>li>a:hover {
+  color: #03a9f4;
+}
+
+.collection {
+  margin: 30vh 0 0 0;
+  display: block;
+  /* border: 1px solid red; */
+  padding: 5px;
+  height: 65vh;
+  overflow: auto;
+}
+
+.collection::-webkit-scrollbar {
+  width: 1px;
+}
+.collection::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 20PX;
+}
+.collection::-webkit-scrollbar-thumb {
+  background: rgb(1, 1, 1); 
+  border-radius: 20px;
+}
+.collection::-webkit-scrollbar-thumb:hover {
+  background: #777474; 
+}
+
+.collection>h6{
+  padding: 20px 20px;
+  font-size: 1vmax;
+  font-weight: 90;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+
+.sale {
+  background-color: yellow;
+
+}
+
+.sale>h6 {
+  padding: 10px 10px;
+  font-size: 1vmax;
+  font-weight: 80;
+}
+
+.sale>ul>li {
+  list-style: none;
+  padding: 4px 20px;
+  font-size: 0.8vmax;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.sale>ul>li:hover{
+  cursor: pointer;
+}
+.collection>p{
+  padding: 20px 20px;
+  /* border: 1px solid red; */
+  font-size: 0.9vmax;
+  font-weight: 100;
+}
+
+.toggle {
+
+  position: relative;
+  width: 25px;
+  height: 20px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 18px 0 0 15px;
+
+  cursor: pointer;
+}
+
+#line1 {
+  height: 0.2vh;
+  width: 1.9vw;
+  background: #000;
+  border-radius: 20%;
+  transform-origin: 0 3px;
+  transition: 0.3s ease;
+}
+
+#line2 {
+  height: 0.2vh;
+  width: 1.9vw;
+  background: #000;
+  border-radius: 50px;
+}
+
+#line3 {
+  height: 0.2vh;
+  width: 1.9vw;
+  background: #000;
+  border-radius: 50px;
+  transform-origin: 0 -1px;
+  transition: 0.3s ease;
+}
